@@ -1,0 +1,22 @@
+{
+  "name": "codex-auto-title",
+  "version": "0.1.0",
+  "description": "自动给 Codex 会话起标题，并随会话演进持续更新。第 1 轮命名一次，之后每 N 轮重估。",
+  "license": "MIT",
+  "keywords": [
+    "session",
+    "title",
+    "rename",
+    "hooks",
+    "productivity"
+  ],
+  "interface": {
+    "displayName": "Auto Title",
+    "shortDescription": "自动命名会话，并随会话演进更新标题",
+    "longDescription": "新会话首次提交时登记中性临时名，首句预览只取自 Codex 已接受的消息。默认在第 1 轮答完后，让会话自己的模型结合实际工作生成标题，之后每 10 轮重估一次。检测到已有名称或人工改名时会保留该名称。更新后的标题可在 codex resume 中查看。",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ]
+  }
+}

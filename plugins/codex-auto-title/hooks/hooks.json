@@ -1,0 +1,31 @@
+{
+  "description": "codex-auto-title —— 第 1 轮命名会话，之后每 N 轮重估标题",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -B \"$PLUGIN_ROOT/hooks/on-stop.py\"",
+            "commandWindows": "py -3 -B \"${PLUGIN_ROOT}\\hooks\\on-stop.py\"",
+            "timeout": 1,
+            "statusMessage": "codex-auto-title"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 -B \"$PLUGIN_ROOT/hooks/on-stop.py\"",
+            "commandWindows": "py -3 -B \"${PLUGIN_ROOT}\\hooks\\on-stop.py\"",
+            "timeout": 15,
+            "statusMessage": "codex-auto-title"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "codex-auto-title",
+  "interface": {
+    "displayName": "Auto Title"
+  },
+  "plugins": [
+    {
+      "name": "codex-auto-title",
+      "source": {
+        "source": "local",
+        "path": "./plugins/codex-auto-title"
+      },
+      "policy": {
+        "installation": "AVAILABLE"
+      },
+      "category": "Productivity"
+    }
+  ]
+}
